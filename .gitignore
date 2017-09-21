@@ -1,7 +1,8 @@
 ### Gradle template
 git.gradle
 build/
-*.gradle
+.gradle/
+gradle/
 .gradle
 !gradle/wrapper/gradle-wrapper.jar
 
