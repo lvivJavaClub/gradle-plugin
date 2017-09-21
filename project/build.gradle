@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath group: 'com.lohika.javaclub', name: 'firstplugin', version: '1.0.0-SNAPSHOT'
+    }
+}
+
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+apply plugin: 'com.lohika.javaclub.firstplugin'
+
+dependencies {
+    compile "com.lohika.javaclub:firstplugin:1.0.0-SNAPSHOT"
+}

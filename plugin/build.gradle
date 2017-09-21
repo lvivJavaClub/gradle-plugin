@@ -1,0 +1,22 @@
+plugins {
+    id 'maven-publish'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+repositories {
+    jcenter()
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.version = '1.0.0-SNAPSHOT'
+        pom.groupId = 'com.lohika.javaclub'
+        pom.artifactId = 'firstplugin'
+    }
+}
+
+dependencies {
+    compile gradleApi()
+}
