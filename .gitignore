@@ -2,9 +2,8 @@
 git.gradle
 build/
 .gradle/
-gradle/
-.gradle
-!gradle/wrapper/gradle-wrapper.jar
+#gradle/
+*/gradle/wrapper/gradle-wrapper.jar
 
 ### IntelliJ IDEA ###
 .idea
